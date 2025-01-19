@@ -1,5 +1,5 @@
-\documentclass{beamer}
-\usepackage[T1]{fontenc}
+\documentclass[12pt]{article}
+\usepackage[a4paper, top=2cm, bottom=2cm]{geometry}
 
 % Include Packages
 \usepackage{latexsym, amsmath, booktabs, subcaption}
@@ -9,7 +9,7 @@
 % Font Setting
 \usepackage{xeCJK}
 \setmainfont{Noto Sans Regular}
-\setCJKsansfont{NotoSansTC}[
+\setCJKmainfont{NotoSansTC}[
     Path = /Library/Fonts/,
     UprightFont = *-Regular,
     BoldFont = *-Bold,
@@ -17,11 +17,6 @@
 
 % Useful Macros
 \newcommand{\tb}[1]{\textbf{#1}}
-\newcommand{\slide}[2]{
-    \begin{frame}{#1}
-        #2
-    \end{frame}
-}
 \newcommand{\items}[1]{
     \begin{itemize}
            #1
@@ -48,34 +43,17 @@
 % Packages Setting
 \setlist[itemize]{itemsep=15pt, label=\textbullet}
 
-% Slides Information
+% Docs Information
 \author{}
 \title{}
-\institute{}
 \date{}
-\usepackage{beamerTemplate}
 
+\renewcommand{\contentsname}{目錄}
 
 \begin{document}
+\date{}
+\maketitle
+\tableofcontents
 
-\begin{frame}
-    \titlepage
-    % \vspace*{-0.6cm}
-    % \begin{figure}[htpb]
-    %     \begin{center}
-    %         \includegraphics[keepaspectratio, scale=0.4]{pic/logo.png}
-    %     \end{center}
-    % \end{figure}
-\end{frame}
-
-\begin{frame}
-\tableofcontents[sectionstyle=show,
-subsectionstyle=show/shaded/hide,
-subsubsectionstyle=show/shaded/hide]
-\end{frame}
-
-\section{}
-\begin{frame}{}
-\end{frame}
 
 \end{document}
