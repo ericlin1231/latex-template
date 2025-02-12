@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, top=2cm, bottom=2cm]{geometry}
+
+% Include Packages
+\usepackage{latexsym, amsmath, booktabs, subcaption}
+\usepackage{graphicx ,listings, enumitem, enumitem}
+\usepackage{array, adjustbox}
+
+% Fonts
+\usepackage[OT1]{fontenc}
+
+% Useful Macros
+\newcommand{\tb}[1]{\textbf{#1}}
+\newcommand{\items}[1]{
+    \begin{itemize}
+           #1
+    \end{itemize}
+}
+\newcommand{\picw}[1]{
+    \begin{center}
+        \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{pic/#1}
+    \end{center}
+}
+\newcommand{\tablew}[4]{
+    \begin{table}[htbp]
+        \centering
+        \begin{adjustbox}{max totalsize={\textwidth}{0.8\textheight},center,keepaspectratio}
+            \begin{tabular}{#1}
+                #4
+            \end{tabular}
+        \end{adjustbox}
+        \caption{#2}
+        \label{#3}
+    \end{table}
+}
+
+% Packages Setting
+\setlist[itemize]{itemsep=15pt, label=\textbullet}
+
+% Docs Information
+\author{}
+\title{}
+
+\begin{document}
+\date{}
+\maketitle
+\tableofcontents
+
+
+\end{document}

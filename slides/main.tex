@@ -1,0 +1,74 @@
+\documentclass{beamer}
+
+% Include Packages
+\usepackage{latexsym, amsmath, booktabs, subcaption}
+\usepackage{graphicx ,listings, enumitem, enumitem}
+\usepackage{array, adjustbox}
+
+% Fonts
+\usepackage[OT1]{fontenc}
+
+% Useful Macros
+\newcommand{\tb}[1]{\textbf{#1}}
+\newcommand{\slide}[2]{
+    \begin{frame}{#1}
+        #2
+    \end{frame}
+}
+\newcommand{\items}[1]{
+    \begin{itemize}
+           #1
+    \end{itemize}
+}
+\newcommand{\picw}[1]{
+    \begin{center}
+        \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{pic/#1}
+    \end{center}
+}
+\newcommand{\tablew}[4]{
+    \begin{table}[htbp]
+        \centering
+        \begin{adjustbox}{max totalsize={\textwidth}{0.8\textheight},center,keepaspectratio}
+            \begin{tabular}{#1}
+                #4
+            \end{tabular}
+        \end{adjustbox}
+        \caption{#2}
+        \label{#3}
+    \end{table}
+}
+
+% Packages Setting
+\setlist[itemize]{itemsep=15pt, label=\textbullet}
+
+% Slides Information
+\author{}
+\title{}
+\institute{}
+\date{}
+\usepackage{beamerTemplate}
+
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+    % \vspace*{-0.6cm}
+    % \begin{figure}[htpb]
+    %     \begin{center}
+    %         \includegraphics[keepaspectratio, scale=0.4]{pic/logo.png}
+    %     \end{center}
+    % \end{figure}
+\end{frame}
+
+\begin{frame}
+\tableofcontents[sectionstyle=show,
+subsectionstyle=show/shaded/hide,
+subsubsectionstyle=show/shaded/hide]
+\end{frame}
+
+\section{}
+\begin{frame}{}
+\end{frame}
+
+\end{document}

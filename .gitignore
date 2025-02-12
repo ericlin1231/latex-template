@@ -1,0 +1,12 @@
+.DS_Store
+*.fls
+*.out
+*.gz
+*.xdv
+*.aux
+*.log
+*.pdf
+*.fdb_latexmk
+*.nav
+*.snm
+*.toc
